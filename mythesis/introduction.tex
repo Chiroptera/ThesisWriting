@@ -1,0 +1,129 @@
+\chapter{Introduction}
+\label{chapter:introduction}
+
+%TODO (extra introduction)
+% problems under Big Data paradihm
+% typical challenges with Big Data
+% why EAC?
+% combination of both
+
+\section{Challenges and Motivation}
+
+% Estrutura mais clara:
+% Motivacao: analise atomatica de dados numa perspectiva de
+% analise exploratoria; exemplos; novos desafios face a grande
+% quantidade de dados; tecnicas de clustering como as tecnicas
+% formais de abordar estes problemas; dificuldades tradicionais
+% que levaram ao state-of-art dos metodos de ensemble.
+% Dificuldades adicionais asociados ao Big Data; face a isto a
+% tese propoe abordar este problema ....
+ 
+% Se quizeres, formulacao mais detalhada do problema com um
+% exemplo mais motivador com dados reais: clustering, EAC, ...
+
+
+
+% Motivacao: analise atomatica de dados numa perspectiva de
+% analise exploratoria;
+Advances in technology allow for the collection and storage of unprecedented amount and variety of data, a concept commonly designated by \emph{Big Data}.
+Most of this data is stored electronically and there is an interest in automated analysis for generation of knowledge and new insights.
+%examples of applications; jet engine example is nice for Air Force: taken from http://wikibon.org/wiki/v/Big_Data_in_the_Aviation_Industry; related Carnegie Mellon: http://bigdatasymposium.dsigroup.org/wp-content/uploads/2011/12/Dubrawski-DSI-Big-Data-Symposium-January-29-2013.pdf
+The applications of such analysis are abundant and across many fields, ranging from recommender systems and customer segmentation in business, to predicting when a jet engine is likely to fail using sensor data, or even the study of gene expression in biomedics, to name a few.
+
+% examples of analisis tools
+A growing body of formal methods aiming to model, structure and/or classify data already exist, e.g. linear regression, principal component analysis, cluster analysis, support vector machines, neural networks.
+% tecnicas de clustering como as tecnicas formais de abordar estes problemas
+Cluster analysis is an interesting tool because it typically does not make assumptions on the structure of the data.
+Since, often, the structure of the data is unknown, clustering techniques become particularly interesting for transforming this data into knowledge and discovering its underlying structure and patterns.
+%Clustering is a ill defined problem, one of the reasons why there are hundreds of algorithms. 
+Clustering is a hard problem and a vast body of work on these algorithms exist.
+Yet, typically, no single algorithm is able to respond to the specificities of all data.
+Different methods are suited to datasets of different characteristics and, often, the challenge of the researcher is to find the right algorithm for the task. %TODO get ref for this
+
+% dificuldades tradicionais que levaram ao state-of-art dos metodos de ensemble.
+Currently, there are state of the art algorithms that are more robust than "traditional" algorithms by having a wider applicability or being less dependent on input parameters, e.g. algorithms that do not take any parameters for performing an analysis.
+One such approach is Evidence Accumulation Clustering (EAC), belonging to the wider class of ensemble methods.
+EAC is a state-of-the art clustering method that addresses the robustness challenge.
+% novos desafios face a grande quantidade de dados; % Dificuldades adicionais asociados ao Big Data
+However, the current reality of capturing massive amounts of data rises new challenges.
+Two important challenges are efficiency and scalability, which translate on how fast the algorithms are and how well they scale when the input data multiplies in size, dimensionality and variety.
+The algorithms themselves are no longer the only focus of research.
+Much effort is being put into the scalability and performance of algorithms, which usually translates in addressing their computational complexity with parallelized computation and distributed memory being some of the proposed solutions.
+Cluster analysis with EAC should be fast and able to scale to larger datasets as well as robust, so as to address the reality of big data.
+
+%TODO review paragraph; it is a collection of phrases right now
+% This sprouted the rise of new uses of existing computing architectures (e.g. Graphic Processing Units) and development of new programming models (e.g. Hadoop, shared and distributed memory).
+% Each of these has its own specificities and the researcher must have an in-depth knowledge of the architectures and models used to frame the problems and obtain results.
+
+% face a isto a tese propoe abordar este problema
+This dissertation is concerned with pushing the current limits of the EAC to large datasets by addressing the problems of scalability and efficiency without compromising robustness, using technology available in a workstations.
+Processing of huge amounts of data has been out of the range of capability of the traditional workstations.
+This sprouted the rise of new uses of existing computing architectures (e.g. Graphic Processing Units) and development of new programming models (e.g. Hadoop, shared and distributed memory).
+The problem at hand is, then, to  optimize the algorithm regarding both speed and memory usage.
+This, of course, comes with challenges.
+How can one keep the original accuracy while significantly increase efficiency?
+Is there an exploitable trade-off between the three main characteristics: speed, memory and accuracy?
+These are guiding questions that this dissertation addresses.
+
+
+\section{Goals}
+
+This dissertation aims to research and extend the state of the art of ensemble clustering, in what concerns the EAC method and its application to large datasets, while also assessing algorithmic solutions and parallelization techniques.
+The goal is to understand EAC's suitability for large datasets and find ways to respond to the stated challenges, in terms of speed and memory.
+The main objectives for this work are:
+
+\begin{itemize}
+
+\item Study the integration of quantum inspired methods in EAC.
+
+\item Study the integration of the General Purpose computing in a Graphics Processing Unit (GPGPU) paradigm in EAC.
+
+\item Devise strategies to reduce computation and memory complexities of EAC.
+
+\item Application of Evidence Accumulation Clustering to Big Data.
+
+\item Validation of Big Data EAC on real data.% (ECG for emotional state discovery and/or discovery of natural groups, or other datasets)
+\item Application of EAC to real-world large datasets.
+\end{itemize}
+
+\section{Contributions}
+The main contributions are the adaptation of the three distinct stages of the EAC framework to larger datasets.
+In particular, an efficient parallel version for Graphics Processing Units (GPU) of the K-Means clustering algorithm is implemented for the first stage of EAC.
+Still in this stage, two clustering algorithms in the young field of Quantum Clustering were reviewed, tested and evaluated having EAC in mind. % QK-Means and Horn
+Different methods for the second stage were tested, using complete matrices and sparse matrices.% and a k-Nearest Neighbors scheme.
+Worthy of mention is a novel and specialized method for building a sparse matrix in the second stage. % EAC CSR
+%A post-processing operation on the second stage product was briefly studied. % the threshold cut
+A GPU parallel version of a MST (Minimum Spanning Tree) solver algorithm was reviewed and tested for the last stage, a co-product of which was an algorithm to find the connected components of a MST.
+A hard disk solution was implemented for dealing with large datasets whose space complexity in the final stage exceeded the available memory.
+
+%Selected work from the present dissertation was compiled into a conference paper and submitted to the $5^{th}$ The International Conference on Pattern Recognition Applications and Methods.
+
+Part of the work from the present dissertation was the subject of a paper accepted for publication at the $5^{th}$ International Conference on Pattern Recognition Applications and Methods \cite{Silva2016}.
+
+
+% Explain briefly the work done
+
+% The scope of the thesis is Big Data and Cluster Ensembles.
+% A main requirement in this context is to have fast clustering techniques.
+% This may be accomplished in two ways: algorithmically or with parallelization techniques.
+% The former deals with finding faster solutions while the latter takes existing solutions and optimizes them with execution speed in mind.
+
+% The initial research was under the algorithmic path.
+% More specifically, exploring quantum inspired clustering algorithms.
+% The findings of this exploration revealed this algorithms to be a poor match for integration in EAC and turned the focus of the research to parallelization techniques.
+% Two main paradigms of parallelization were found appropriate: GPGPU and distributed (among a cluster of workstations).
+% While the first is a readily available resource in common machines, the second is able to address problems dealing with larger datasets.
+
+\section{Outline}
+
+Chapter \ref{chapter:clustering} provides an introduction to clustering nomenclature and concepts, as well as some "traditional" clustering algorithms.
+Chapter \ref{chapter:stateofart} starts by reviewing the Evidence Accumulation Clustering algorithm in detail.
+It goes on to review possible approaches to the problem of scaling EAC.
+Based on an algorithmic approach, a review of the young field of quantum clustering is presented, with a more in-depth emphasis on two algorithms.
+With a parallelization approach in mind, a programming model for the GPU (CUDA) is reviewed, followed by some parallelized versions of relevant algorithms to the problem of this dissertation.
+The following chapter, \ref{chapter:methodology}, presents the approach that was actually taken to scale EAC.
+It presents the steps taken on each part of the algorithm, the underlying difficulties and what was done to address them.
+It also includes the reference of approaches that were developed but were not deemed suited to integrate the EAC toolchain.
+Chapter \ref{chapter:results} presents the results of the different approaches for optimizing the EAC method and critical discussion of those results.
+Finally, chapter \ref{chapter:conclusions} concludes the dissertation.
+It also offers recommendations for future work.

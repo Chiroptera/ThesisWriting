@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Abstract.tex                                        %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Andre C. Marta                                           %
+%     Last modified : 21 Jan 2011                                      %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Abstract}
+
+% Add entry in the table of contents as section
+\addcontentsline{toc}{section}{Abstract}
+
+Advances in technology allow for the collection and storage of an unprecedent amount and variety of data.
+Most of this data is stored electronically and there is an interest in automated analysis for generation of knowledge and new insights.
+Since the structure of the data is unknown, clustering techniques become particularly interesting for knowledge discovery and data mining, as they make as few assumptions on the data as possible.
+A vast body of work on these algorithms exist, yet, typically, no single algorithm is able to respond to the specificities of all data.
+Ensemble clustering algorithm address this problem by combining other algorithms.
+Evidence Accumulation Clustering (EAC) is a robust ensemble algorithm that has shown good results and is the focus of this dissertation.
+However, this robustness comes with higher computational cost.
+Its application is slower and restricted to smaller datasets.
+Thus, the objective of this dissertation is to scale EAC, allowing its applicability to big datasets, with technology available at a typical workstation.
+Accordingly, several approaches were explored: speed-up with other algorithms (\emph{quantum clustering}) or parallel computing (with GPU) and reducing space complexity by using external memory (hard drive) algorithms and exploiting the sparse nature of EAC.
+A relevant contribution is a novel method to build a sparse matrix specialized in EAC.
+Results show that the proposed solution is applicable to large datasets and presents speed-ups between 6 and 200 over the original implementation on different phases of EAC for small datasets.
+
+\vfill
+
+\textbf{\Large Key words:} Clustering methods, EAC, K-Means, MST, GPGPU, CUDA, Sparse matrices, Single-Link
+
+\cleardoublepage
+

@@ -1,0 +1,25 @@
+\begin{minipage}[h]{\hsize}
+	\centering
+	\captionof{table}{Average speed-up of the GPU MST algorithm for different data sets, sorted by number of edges.}
+\begin{tabular}{lrrrrr}
+\toprule
+Data set &  No. vertices &   No. edges &     Speed-up \footnote{Average speed-up from 10 rounds of executing the algorithm on each graph.} &  No. edges / vertex & Memory [MBytes]\\
+\midrule
+
+NY                           &      264347 &    730100 &  0.77 &          2.76 &    7.59 \\
+BAY                          &      321271 &    794830 &  0.79 &          2.47 &    8.52 \\
+COL                          &      435667 &   1042400 &  0.99 &          2.39 &   11.28 \\
+FLA                          &     1070377 &   2687902 &  1.39 &          2.51 &   28.67 \\
+NW                           &     1207946 &   2820774 &  1.45 &          2.34 &   30.74 \\
+NE                           &     1524454 &   3868020 &  1.56 &          2.54 &   41.14 \\
+CAL                          &     1890816 &   4630444 &  1.58 &          2.45 &   49.75 \\
+LKS                          &     2758120 &   6794808 &  1.69 &          2.46 &   72.88 \\
+E                            &     3598624 &   8708058 &  1.80 &          2.42 &   93.89 \\
+W                            &     6262105 &  15000000 &  1.94 &          2.39 &  163.13 \\
+Coassoc 50k \footnote{Co-association matrix of a 100 partition ensemble produced from a mixture of 6 Gaussians with $50 \: 000$ patterns, using the rule sk=sqrt\_2 th=30\%.} 							   &       50000 &  30296070 &  0.20 &        605.92 &  231.52 \\
+CTR                          &    14000000 &  34000000 &  2.09 &          2.43 &  365.82 \\
+
+\bottomrule
+\end{tabular}
+\label{tab:mst speedup}
+\end{minipage}
