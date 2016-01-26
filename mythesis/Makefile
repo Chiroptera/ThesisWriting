@@ -7,8 +7,8 @@ FILE=Thesis
 FOLDER_ALL=allchapters
 FILE_ALL=Thesis_AllChapters
 
-RESOURCES_PATH=/home/chiroptera/workspace/thesis_writing/rsc/
-
+#RESOURCES_PATH=/home/chiroptera/workspace/thesis_writing/rsc/
+RESOURCES_PATH=../rsc/
 # ---------------------------------------------------------
 
 all:
