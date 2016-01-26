@@ -5,6 +5,6 @@
 .blg
 .log
 .dvi
-.pdf
 Thumbs.db*
 ~*
+.directory
