@@ -14,7 +14,7 @@
    id="svg4499"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="kmin_evolution.pdf">
+   sodipodi:docname="kmin_evolution.svg">
   <defs
      id="defs4501">
     <clipPath
@@ -115,10 +115,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4504">
@@ -128,7 +128,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -326,13 +326,13 @@
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Gothic;-inkscape-font-specification:Century Gothic"
-       x="783.42859"
+       x="773.42859"
        y="814.64789"
        id="text5956"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5958"
-         x="783.42859"
+         x="773.42859"
          y="814.64789">10<tspan
    style="font-size:65.00091553%;baseline-shift:super"
    id="tspan5962">7</tspan></tspan></text>
@@ -428,7 +428,7 @@
    id="tspan6016">min</tspan></tspan></text>
     <g
        id="g6036"
-       transform="translate(0,-86)">
+       transform="translate(-8,-86)">
       <rect
          ry="7.7648773"
          y="688.07648"

@@ -13,8 +13,8 @@
    height="671.79724"
    id="svg16100"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="matrix_formats_2sqrt.pdf">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="matrix_formats_2sqrt.svg">
   <defs
      id="defs16102">
     <clipPath
@@ -1483,10 +1483,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
-     inkscape:window-x="1432"
-     inkscape:window-y="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata16105">
@@ -1496,7 +1496,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1872,11 +1872,11 @@
        sodipodi:linespacing="125%"
        id="text28928"
        y="155.42694"
-       x="699.27655"
+       x="685.27655"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Gothic;-inkscape-font-specification:Century Gothic"
        xml:space="preserve"><tspan
          y="155.42694"
-         x="699.27655"
+         x="685.27655"
          id="tspan28930"
          sodipodi:role="line">10<tspan
    style="font-size:65.00091553%;baseline-shift:super"
@@ -2195,35 +2195,35 @@
     <text
        sodipodi:linespacing="125%"
        id="text29116"
-       y="-449"
-       x="-485.67337"
+       y="-437.57144"
+       x="-544.24481"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Gothic;-inkscape-font-specification:Century Gothic"
        xml:space="preserve"><tspan
          style="font-size:28px;font-weight:bold;-inkscape-font-specification:Century Gothic Bold"
-         y="-449"
-         x="-485.67337"
+         y="-437.57144"
+         x="-544.24481"
          id="tspan29118"
          sodipodi:role="line">(A) Building the co-association matrix</tspan><tspan
          style="font-size:28px;font-weight:bold;-inkscape-font-specification:Century Gothic Bold"
-         y="-414"
-         x="-485.67337"
+         y="-402.57144"
+         x="-544.24481"
          sodipodi:role="line"
          id="tspan29124">       with different matrix formats</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Gothic;-inkscape-font-specification:Century Gothic"
-       x="244.32663"
-       y="-449"
+       x="185.7552"
+       y="-437.57144"
        id="text29120"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan29122"
-         x="244.32663"
-         y="-449"
+         x="185.7552"
+         y="-437.57144"
          style="font-size:28px;font-weight:bold;-inkscape-font-specification:Century Gothic Bold">(B) Comparison of three methods </tspan><tspan
          sodipodi:role="line"
-         x="244.32663"
-         y="-414"
+         x="185.7552"
+         y="-402.57144"
          style="font-size:28px;font-weight:bold;-inkscape-font-specification:Century Gothic Bold"
          id="tspan29126">      for extraction</tspan></text>
     <g
